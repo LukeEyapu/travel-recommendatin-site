@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 24px;
   }
 
 body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: poppins, Arial, sans-serif;
       color: white;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
+      overflow-x: hidden;
     }
     .navbar {
       display: flex;
@@ -38,6 +39,7 @@ body {
       text-decoration: none;
       color: white;
       font-weight: bold;
+      font-size: 22px;
     }
     .navbar .buttons {
         display: flex;
@@ -78,23 +80,21 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.3); /* Dark overlay with 50% transparency */
-        z-index: 1; /* Ensure the overlay sits above the image */
+        background: rgba(0, 0, 0, 0.8); /* Dark overlay with 50% transparency */
       }
-      .hero * {
-        position: relative;
-        z-index: 2; /* Ensure text appears above the overlay */
-        color: white; /* Make sure text is readable */
-      }
+     
     .hero h1 {
       font-size: 48px;
       line-height: 1.2;
       margin: 0;
+      z-index: 2;
     }
     .hero p {
       font-size: 18px;
       margin: 20px 0;
       max-width: 600px;
+      z-index: 2;
+
     }
     .hero button {
       padding: 10px 20px;
@@ -104,6 +104,7 @@ body {
       color: white;
       cursor: pointer;
       border-radius: 5px;
+      z-index: 2;
     }
     .hero button:hover {
       background-color: #138496;
@@ -152,4 +153,19 @@ body {
         position: relative;
         z-index: 2; /* Makes sure content is on top of the background */
       }
+      .text-content{
+        z-index: 3;
+      }
+
+      .my-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem;
+        width: 100%;
+      }
+    .my-form input{
+ 
+    } 
       
