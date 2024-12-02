@@ -10,15 +10,16 @@
     <header class="navbar">
         <div class="logo" >LukaTRVLS</div>
         <ul>
-          <li><a href="#home">Home</a></li>
+          <li><a href="travel_recommendation.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact_us.html">Contact Us</a></li>
         </ul>
+        <input type="text" placeholder="Search for recommendations" id="s-input">
         <div class="buttons">
-            <button class="search-btn" onclick="searchRecommendations()">Search</button>
-            <button class="clear-btn" onclick="clearRecommendations()">Clear</button>
+            <button id="search-btn" >Search</button>
+            <button id="clear-btn" >Clear</button>
           </div>
-      </header>
+    </header>
 
       <section class="hero">
         <h1>EXPLORE<br>DREAM<br>DESTINATION</h1>
@@ -28,12 +29,12 @@
         </p>
         <button>BOOK NOW</button>
       </section>
+    
       /* to display recommendations*/
-      <section class="recommendations" id="recommendationsSection">
-        <h2>Recommendations</h2>
-        <ul id="recommendationsList"></ul>
-      </section>
+    <main>
+        <div id="recommendationsContainer"></div> <!-- Container for displaying search results -->
+    </main>
 
-      </div>
+      <script src="travelRecommendation.js"></script>
 </body>
 </html>

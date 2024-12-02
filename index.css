@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 24px;
   }
 
 body {
@@ -53,11 +52,11 @@ body {
         border-radius: 5px;
       }
       .navbar .search-btn {
-        background-color: #28a745;
+        background-color: #2ec551;
         color: white;
       }
       .navbar .clear-btn {
-        background-color: #dc3545;
+        background-color: #c5303f;
         color: white;
       }
       .navbar button:hover {
@@ -66,7 +65,7 @@ body {
     .hero {
       position: relative;
       height: 100vh;
-      background: url('city.jpg') no-repeat center center/cover;
+      background: url('./images/city.jpg') no-repeat center center/cover;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -163,9 +162,44 @@ body {
         justify-content: center;
         flex-direction: column;
         padding: 2rem;
-        width: 100%;
+        height: 70vh;
+        z-index: 2000;
       }
-    .my-form input{
- 
-    } 
+      .my-form label{
+        font-size: 1.5rem;
+        padding: .5rem;
+      }
       
+      .my-form input{
+        font-size: 2rem;
+        width: 100%;
+        outline: none;
+        border-radius: 10px;
+      }
+      #message{
+        font-size: 3rem;
+
+      }
+      #recommendationsContainer {
+        margin: 20px;
+    }
+
+    .country {
+        background: #fff;
+        margin: 15px 0;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    .city {
+        margin-top: 10px;
+    }
+
+#s-input{
+  width: 23%;
+  outline: none;
+  border-radius: 10px;
+  padding: .5rem 2rem;
+}    
+   
